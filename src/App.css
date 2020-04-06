@@ -1,0 +1,29 @@
+.Particles{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:-1;
+}
+.hero{
+    margin: 300px auto 30px auto;
+    height:50px;
+    width:75%;
+    display:flex;
+    background:url('./Image/bg-inpt.png');
+    border-radius:5px;
+}
+.srch_br{
+    margin: auto 0px auto 5px;
+}
+@media screen and (max-width:380px){
+.srch_br{
+    width:65%;
+}
+}
+.center {
+    display: flex;
+    justify-content: center;
+  }
+  

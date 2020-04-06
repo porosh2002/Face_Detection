@@ -1,0 +1,26 @@
+.avatar{
+    border-radius:50%;
+    height:50px;
+    cursor: pointer;
+    width:50px;
+    margin:auto 50px auto 0px;
+}
+.nav{
+    position:sticky;
+    display: flex;
+    top:0;
+    justify-content:space-between;
+    height:60px;
+    background-color: #ffffff;
+}
+.logo{
+    margin: auto 0px auto 50px;
+}
+@media screen and (max-width:400px){
+    .logo{
+        margin: auto 0px auto 20px;
+    }
+    .avatar{
+        margin:auto 20px auto 0px;
+    }
+}

@@ -16,34 +16,34 @@ class App extends Component {
     this.state = {
       input: "",
       imageURL: "",
-      box:{},
+      boxes:[],
     };
   }
   oninputchange = (event) => {
     this.setState({ input: event.target.value });
   };
-  calculateFaceLocation = (data) => {
-    const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
-    const image = document.getElementById('inputimage');
-    const width = Number(image.width);
-    const height = Number(image.height);
-    console.log(data);
-    
-    return {
-      leftCol: clarifaiFace.left_col * width,
-      topRow: clarifaiFace.top_row * height,
-      rightCol: width - (clarifaiFace.right_col * width),
-      bottomRow: height - (clarifaiFace.bottom_row * height)
-    }
+  calculateFaceLocations = (data) => {
+    return data.outputs[0].data.regions.map(faces=>{
+      const clarifaiFace =faces.region_info.bounding_box;
+      const image = document.getElementById('inputimage');
+      const width = Number(image.width);
+      const height = Number(image.height);
+      return {
+        leftCol: clarifaiFace.left_col * width,
+        topRow: clarifaiFace.top_row * height,
+        rightCol: width - (clarifaiFace.right_col * width),
+        bottomRow: height - (clarifaiFace.bottom_row * height)
+      }
+    })
   }
-  displayFaceBox = (box) => {
-    this.setState({box: box});
+  displayFaceBox = (boxes) => {
+    this.setState({boxes: boxes});
   }
   onclick_btn = () => {
     this.setState({ imageURL: this.state.input });
     app.models
       .predict("a403429f2ddf4b49b307e318f00e528b", this.state.input)
-      .then(response=>this.displayFaceBox(this.calculateFaceLocation(response)))
+      .then(response=>this.displayFaceBox(this.calculateFaceLocations(response)))
       .catch(err=>console.log(err))
   };
   render() {
@@ -64,7 +64,7 @@ class App extends Component {
             <Button onclick_btn={this.onclick_btn} />
           </div>
         </div>
-        <Image box={this.state.box} imageURL={this.state.imageURL} />
+        <Image box={this.state.boxes} imageURL={this.state.imageURL} />
       </div>
     );
   }

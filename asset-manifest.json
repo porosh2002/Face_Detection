@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.93bbc702.chunk.css",
-    "main.js": "/static/js/main.8eab8639.chunk.js",
-    "main.js.map": "/static/js/main.8eab8639.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.13a1d77f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.13a1d77f.js.map",
-    "static/css/2.07548e1c.chunk.css": "/static/css/2.07548e1c.chunk.css",
-    "static/js/2.f40c5c3a.chunk.js": "/static/js/2.f40c5c3a.chunk.js",
-    "static/js/2.f40c5c3a.chunk.js.map": "/static/js/2.f40c5c3a.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.23950a24b4cfccfdefb13262fffcae0e.js": "/precache-manifest.23950a24b4cfccfdefb13262fffcae0e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.07548e1c.chunk.css.map": "/static/css/2.07548e1c.chunk.css.map",
-    "static/css/main.93bbc702.chunk.css.map": "/static/css/main.93bbc702.chunk.css.map",
-    "static/js/2.f40c5c3a.chunk.js.LICENSE.txt": "/static/js/2.f40c5c3a.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/bg-inpt.d01731ee.png"
+    "main.css": "/Face_Detection/static/css/main.0e390d61.chunk.css",
+    "main.js": "/Face_Detection/static/js/main.1cf5c7d2.chunk.js",
+    "main.js.map": "/Face_Detection/static/js/main.1cf5c7d2.chunk.js.map",
+    "runtime-main.js": "/Face_Detection/static/js/runtime-main.1daae441.js",
+    "runtime-main.js.map": "/Face_Detection/static/js/runtime-main.1daae441.js.map",
+    "static/css/2.07548e1c.chunk.css": "/Face_Detection/static/css/2.07548e1c.chunk.css",
+    "static/js/2.23be029f.chunk.js": "/Face_Detection/static/js/2.23be029f.chunk.js",
+    "static/js/2.23be029f.chunk.js.map": "/Face_Detection/static/js/2.23be029f.chunk.js.map",
+    "index.html": "/Face_Detection/index.html",
+    "precache-manifest.395cc3e3311a109450c77525fc86ed01.js": "/Face_Detection/precache-manifest.395cc3e3311a109450c77525fc86ed01.js",
+    "service-worker.js": "/Face_Detection/service-worker.js",
+    "static/css/2.07548e1c.chunk.css.map": "/Face_Detection/static/css/2.07548e1c.chunk.css.map",
+    "static/css/main.0e390d61.chunk.css.map": "/Face_Detection/static/css/main.0e390d61.chunk.css.map",
+    "static/js/2.23be029f.chunk.js.LICENSE.txt": "/Face_Detection/static/js/2.23be029f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Face_Detection/static/media/bg-inpt.d01731ee.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.13a1d77f.js",
+    "static/js/runtime-main.1daae441.js",
     "static/css/2.07548e1c.chunk.css",
-    "static/js/2.f40c5c3a.chunk.js",
-    "static/css/main.93bbc702.chunk.css",
-    "static/js/main.8eab8639.chunk.js"
+    "static/js/2.23be029f.chunk.js",
+    "static/css/main.0e390d61.chunk.css",
+    "static/js/main.1cf5c7d2.chunk.js"
   ]
 }
